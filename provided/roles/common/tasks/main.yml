@@ -1,0 +1,10 @@
+- name: "Executes a user-provided hook"
+  include: "{{ pre_hook_path  }}"
+  when: pre_hook_path is defined 
+- name: "Says hello extra loudly"
+  debug:
+    msg: "HELLO!"
+    verbosity: 0
+- name: "Executes a user-provided hook"
+  include: "{{ post_hook_path }}"
+  when: post_hook_path is defined

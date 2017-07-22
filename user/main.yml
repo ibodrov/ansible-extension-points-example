@@ -1,0 +1,13 @@
+---
+- hosts: local
+  vars:
+    pre_hook_path: "pre.yml"
+    post_hook_path: "post.yml"
+  tasks:
+    - name: Uses the provided role
+      include_role:
+        name: common
+    - name: Says hello
+      debug:
+        msg: "Hello!"
+        verbosity: 0

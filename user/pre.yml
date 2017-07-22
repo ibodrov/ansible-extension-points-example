@@ -1,0 +1,3 @@
+- debug:
+    msg: "PRE HOOK"
+    verbosity: 0

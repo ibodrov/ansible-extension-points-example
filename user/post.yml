@@ -1,0 +1,3 @@
+- debug:
+    msg: "POST HOOK"
+    verbosity: 0
